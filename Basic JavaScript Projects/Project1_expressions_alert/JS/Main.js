@@ -4,5 +4,4 @@ var Characters = "roster", Grappler = "Bulk-o", Zoner = "keepaway", Shoto = "rip
 document.write(Grappler);//this will display the name of the assigned variable from those listed above//
 document.write (4 + 5);//this will display the result of the statement shown in parenthesis//
 var B = "What is a \"kumquat\"";//newly assigned var b//
-document.write(B.fontcolor('blue'));//albeit deprecated, this prints var b, and paints it blue//
-document.write(A+B);//concatenated var a + b//
+document.write(A+B.fontcolor('blue'));//concatenated var a + b, colored blue//
