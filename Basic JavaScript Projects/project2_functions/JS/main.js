@@ -16,3 +16,10 @@ function myFunction() {
     document.getElementById("concatenate").innerHTML = sentence;
     //this functions sole purpose is to demonstrate a concatenated string using the += operator.//
 }
+
+function anotherFunction() {
+    var number = 30;
+    number += 15;
+    document.getElementById("number").innerHTML = number;
+}
+
