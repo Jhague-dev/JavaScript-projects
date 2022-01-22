@@ -12,14 +12,14 @@ function countdown() {
         }
     }
     tick();
-}
+}//the above handles the timer, and "times up" window//
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex += n);//the section comment explains this well enough, but this handles slide advancement/scrolling//
 }
 
 // Thumbnail image controls
@@ -34,7 +34,7 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = "none"; //this handles styling of slides, if my understanding is correct//
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
@@ -55,4 +55,4 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+}//above code simply handles trasition of slide//
