@@ -19,6 +19,6 @@ function string_Method() {
 }//this is to string//
 
 function precision_Method() {
-    var X = 13938.3012987976112;
-    document.getElementById("Precision").innerHTML - X.toPrecision(10);
+    var X = 12938.3012987976112;
+    document.getElementById("Precision").innerHTML = X.toPrecision(10);
 }//this is toprecision//
