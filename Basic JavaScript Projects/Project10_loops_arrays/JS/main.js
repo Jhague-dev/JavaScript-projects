@@ -47,7 +47,7 @@ let car = {
     make:"dodge",
     model:"viper",
     year: "2021",
-    colro: "red",
+    color: "red",
     description : function() {
         return "the car is a " + this.year + this.color + this.make + this.model;
     }
