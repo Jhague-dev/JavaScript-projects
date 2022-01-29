@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="JavaScript/Javascript_1.js"></script>
+
+        
+    </head>
+        <body>
+         <h1>What is your favorite color?</h1>
+         <h3>Pick your favorite color from this list:</h3>
+         <ul>
+             <li>Red</li>
+             <li>Yellow</li>
+             <li>Green</li>
+             <li>Blue</li>
+             <li>Pink</li>
+             <li>Purple</li>
+         </ul>
+         <h3>Enter Your choice below:</h3>
+         
+         <input id="Color_Input" type="text">
+         <button onclick="Color_Function()">Submit Color</button>
+         <p id="Output"></p>
+         
+         <h1 class="Click">this text will change!</h1>
+         <h3 class="Click">This text will not change.</h3>
+         <button onclick="Hello_World_Function()">Click me</button>
+
+         <canvas id="myCanvas" width="200" height="100" style="border:5px solid black;"></canvas>
+         <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "white");
+            
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+            </script>
+
+            <ol>
+                <li data-family-relation="father">mark</li>
+                <li data-family-relation="mother">kelly</li>
+                <li data-family-relation="sister">maxine</li>
+            </ol>
+            <h1>characters</h1>
+            <h3>click on a universe to see a character!</h3>
+
+            <ul>
+                <li onclick="displayTye(this)" id="DC"
+                    data-character-tye="Batman">DC</li>
+                <li onclick="displayType(this)" id="star wars"
+                    data-character-type="Luke Skywalker">Star Wars</li>
+                <li onclick="displayType(this)" id="marvel"
+                    data-character-type="Thor">marvel</li>
+                <li onclick="displayType(this)" id ="star trek"
+                    data-character-type="Jean-Luc Picard">Star trek</li>
+            </ul>
+
+
+        
+        </body>
+</html>
