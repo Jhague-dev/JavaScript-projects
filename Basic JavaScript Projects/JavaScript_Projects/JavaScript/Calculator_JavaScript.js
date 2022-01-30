@@ -86,7 +86,7 @@ function Calculator_Reset() {
 //this funciotn updates the screen with the contents of Display_Value
 function Update_Display(){
     const display = document.querySelector('.calculator-screen');
-    display.Value = Calculator.Display_Value;
+    display.value = Calculator.Display_Value;
 }
 
 Update_Display();
@@ -101,12 +101,12 @@ keys.addEventListener('click', (event)=> {
         return;
     }
     if (target.classList.contains('operator')) {
-        Handle_Operator(target.Value);
+        Handle_Operator(target.value);
         Update_Display();
         return;
     }
     if (target.classList.contains('decimal')) {
-        Input_Decimal(target.Value);
+        Input_Decimal(target.value);
         Update_Display();
         return;
     }
@@ -116,6 +116,6 @@ keys.addEventListener('click', (event)=> {
         Update_Display();
         return;
     }
-    Input_Digit(target.Value);
+    Input_Digit(target.value);
     Update_Display();
 });
